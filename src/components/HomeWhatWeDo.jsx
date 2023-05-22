@@ -14,14 +14,14 @@ const HomeWhatWeDo = () => {
 
     return(
         <div ref={ref} className="relative w-full h-full lg:h-screen">
-            <motion.div className="h-full flex flex-wrap justify-center bg-black items-center"
+            <motion.div className="h-full w-full overflow-hidden block lg:flex flex-wrap justify-center bg-black items-center"
                 style={{opacity}}
             >
                 <motion.div className="w-full h-screen lg:w-1/2 p-6 flex flex-col justify-center items-center"
                     style={{x}}
                 >
-                    <h1 className="font-raleway font-bold text-3xl">
-                        What is <span className="font-comfortaa text-4xl">Trap your Trip?</span>
+                    <h1 className="font-raleway text-center font-bold text-3xl">
+                        What is <br></br><span className="font-comfortaa text-4xl">Trap your Trip?</span>
                     </h1>
                     <p className="font-raleway text-sm  leading-6 py-4 text-justify">
                         Welcome to Trap Your Trip, your go-to platform for seamless travel planning and sharing. 
@@ -31,7 +31,7 @@ const HomeWhatWeDo = () => {
                         <span className="font-bold text-md cursor-pointer">Join our growing community </span>today and embark on your next adventure with confidence.
                     </p>
                 </motion.div>
-                <div className="hidden lg:flex w-1/2 flex-col justify-center items-center">
+                <div className="hidden sm:flex w-1/2 flex-col justify-center items-center">
                     <motion.div className="w-10/12 shadow-[0_0_50px] shadow-zinc-700 rounded-3xl"
                         style={{y}}
                     >
