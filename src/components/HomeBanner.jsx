@@ -3,7 +3,7 @@ import { useRef, useState } from "react";
 import ArrowBackIosIcon from '@mui/icons-material/ArrowBackIos';
 import ArrowForwardIosIcon from '@mui/icons-material/ArrowForwardIos';
 import { motion, useScroll, useTransform } from "framer-motion";
-import places from "../../public/placeSource";
+import {places} from "/public/placeSource";
 
 const HomeBanner = () => {
 
@@ -45,7 +45,9 @@ const HomeBanner = () => {
             <motion.div  className="relative bg-cover w-full h-full"
               style={{y, opacity, backgroundImage: `url(${places[placeIndex].image})`}}
             >
-              <div className="w-full h-full bg-black/50 flex flex-wrap content-center justify-center items-center">
+              <motion.div className="w-full h-full bg-black/50 flex flex-wrap content-center justify-center items-center"
+                style={{y}}
+              >
               <div className="w-full px-12">
                     <div className="w-full md:w-1/2 font-raleway text-zinc-100">
                         <h1 className="text-2xl">{places[placeIndex].name}</h1>
@@ -53,7 +55,7 @@ const HomeBanner = () => {
                         <a className="p-3 bg-transparent text-white rounded-md cursor-pointer hover:bg-blue-600 ease-in-out duration-200">See Itineraries</a>
                     </div>
                 </div>
-                <div className="absolute top-[90%]">
+                <div className="absolute top-[85%]">
                     <IconButton onClick={handlePreviousClick} >
                       <ArrowBackIosIcon
                         sx={{
@@ -76,7 +78,7 @@ const HomeBanner = () => {
                       />
                     </IconButton>                    
                 </div>
-              </div>
+              </motion.div>
             </motion.div>
         </div>
         </div>

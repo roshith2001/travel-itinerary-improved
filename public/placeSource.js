@@ -31,4 +31,25 @@ const places = [
     }
   ];
 
-  export default places;
+  const whoIsGoingToUse = [
+    {
+      index: '1',
+      image: 'https://www.india.com/wp-content/uploads/2018/08/fam-1-dne.jpg',
+      title: 'Plan Memorable Tours and Save Money',
+      text: 'Trap Your Trip is a valuable resource for families looking to plan unforgettable tours while bypassing the need for expensive travel agencies. Find itineraries tailored to the interests and preferences of every family member. By sharing experiences within the community, you can discover hidden gems, family-friendly activities, and trusted accommodations. By using Trap Your Trip, families can save money, make informed decisions, and avoid falling victim to fraudulent activities.'
+    },
+    {
+      index: '2',
+      image: 'https://abrokenbackpack.com/wp-content/uploads/2022/06/Backpackers-traveling-in-Australia.webp',
+      title: 'Explore Locations on a Minimal Budget',
+      text: 'For adventurous backpackers seeking to explore new destinations on a shoestring budget, Trap Your Trip is an invaluable tool. Discover itineraries that highlight affordable or free attractions, budget accommodations, and local secrets that allow you to make the most of your resources. Share your own backpacking experiences to inspire and guide fellow adventurers on their budget-friendly journeys.'
+    },
+    {
+      index: '3',
+      image: 'https://indiatoursntravels.in/package/115388.jpg',
+      title: 'Find the Perfect Itinerary',
+      text: `Trap Your Trip caters to the unique needs of students and bachelors by providing tailored itineraries that align with their interests and preferences. Whether you're looking for vibrant nightlife, cultural experiences, or off-the-beaten-path adventures, our platform offers a diverse range of itineraries created by like-minded travelers. Save time and effort by finding the best-fit itinerary for your chosen destination, ensuring an unforgettable trip that suits your specific desires.`
+    },
+  ]
+
+  export {places, whoIsGoingToUse};
